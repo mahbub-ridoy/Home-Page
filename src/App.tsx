@@ -76,7 +76,7 @@ export default function App() {
         </div>
         
         <div className="flex flex-row md:flex-col gap-6 font-mono text-sm uppercase tracking-widest text-[#CCFF00]">
-          <a href="#" className="hover:text-white transition-colors">GitHub</a>
+          <a href="https://github.com/mahbub-ridoy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
           <a href="#" className="hover:text-white transition-colors">Twitter</a>
           <a href="mailto:contact@ridoy.ai" className="hover:text-white transition-colors">Contact</a>
         </div>
