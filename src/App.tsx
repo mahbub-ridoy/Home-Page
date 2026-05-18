@@ -12,48 +12,13 @@ import { ArrowUpRight } from "lucide-react";
 const PROJECTS = [
   {
     id: "01",
-    title: "Latent Echoes",
-    category: "Diffusion",
-    year: "2026",
+    title: "Online File Converter",
+    category: "Web Tool",
+    year: "2024",
     bgColor: "#0044FF", 
     textColor: "#FFFFFF",
-    desc: "Audio-reactive neural generation. Transforming structural frequencies into visible shapes."
-  },
-  {
-    id: "02",
-    title: "Synthetic Forms",
-    category: "3D Tooling",
-    year: "2026",
-    bgColor: "#FF2A5F",
-    textColor: "#FFFFFF",
-    desc: "Exploring non-Euclidean geometry via custom-trained language models parsing mathematical proofs."
-  },
-  {
-    id: "03",
-    title: "Algorithmic Flora",
-    category: "GAN Realism",
-    year: "2025",
-    bgColor: "#EEEEEE",
-    textColor: "#000000",
-    desc: "Fictional botanical illustrations brought to life. A dataset trained purely on 18th-century botany sketches."
-  },
-  {
-    id: "04",
-    title: "Neural Brutalism",
-    category: "Architecture",
-    year: "2025",
-    bgColor: "#1A1A1A",
-    textColor: "#FFFFFF",
-    desc: "Conceptual structures unbounded by physics. Concrete and light rendered through AI simulation."
-  },
-  {
-    id: "05",
-    title: "Chromatic Mind",
-    category: "Color Theory",
-    year: "2024",
-    bgColor: "#CCFF00",
-    textColor: "#000000",
-    desc: "AI trained to elicit specific emotions through pure color field generation."
+    desc: "A fast, free online tool to convert files between different formats right in your browser.",
+    link: "https://online-file-converter.vercel.app/"
   }
 ];
 
@@ -88,7 +53,9 @@ export default function App() {
         {PROJECTS.map((project, i) => (
           <motion.a
             key={project.id}
-            href="#"
+            href={project.link || "#"}
+            target={project.link ? "_blank" : undefined}
+            rel={project.link ? "noopener noreferrer" : undefined}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: i * 0.1 }}
