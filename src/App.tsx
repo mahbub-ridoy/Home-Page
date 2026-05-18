@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 
 /**
  * ==========================================
@@ -131,6 +132,7 @@ export default function App() {
         </div>
 
       </main>
+      <Analytics />
     </div>
   );
 }
