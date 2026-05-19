@@ -19,6 +19,16 @@ const PROJECTS = [
     textColor: "#FFFFFF",
     desc: "A fast, free online tool to convert files between different formats right in your browser.",
     link: "https://online-file-converter.vercel.app/"
+  },
+  {
+    id: "02",
+    title: "Converts",
+    category: "Converter Page",
+    year: "2026",
+    bgColor: "#CCFF00",
+    textColor: "#000000",
+    desc: "A dedicated page for browsing and launching the newest conversion tools.",
+    link: "https://online-file-converter.vercel.app/converts"
   }
 ];
 
